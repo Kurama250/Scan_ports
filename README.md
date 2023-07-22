@@ -18,7 +18,7 @@
 - On CMD (Command prompt) :
 
 ```shell
-pip install os tqdm socket concurrent.futures sys
+pip install tqdm socket concurrent.futures sys os
 ```
 - After, open "app.py"
 
