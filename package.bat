@@ -8,7 +8,7 @@ if %errorlevel% neq 0 (
 )
 
 REM Installer les modules Python
-python -m pip install os tqdm socket concurrent.futures sys
+python -m pip install tqdm socket concurrent.futures sys os
 
 if %errorlevel% equ 0 (
     echo Installation completed successfully !
