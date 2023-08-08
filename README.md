@@ -22,12 +22,6 @@ pip install tqdm
 ```
 - After, open "app.py"
 
-- Info :</h5>
-
-<em><h5>(Stable version)</h5></em>
-
-/\ Python -v3.9 | Pip -v23.2
-
 - Demo : 
 
 ![alt text](https://github.com/Kurama250/Scan_ports/blob/main/scan.png)
