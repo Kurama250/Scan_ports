@@ -1,6 +1,6 @@
 # Created by Kurama
-# Github : https://github.com/Kurama250
-# Scan IP v1.0
+# Github: https://github.com/Kurama250
+# Scan IP v1.1
 
 import os
 import tqdm
@@ -20,6 +20,8 @@ check_module("tqdm")
 check_module("socket")
 check_module("concurrent.futures")
 check_module("sys")
+
+MAX_THREADS = 100  # Nombre maximum de threads simultanés pour le scan
 
 def create_directory():
     script_directory = os.path.dirname(os.path.abspath(__file__))
@@ -53,7 +55,7 @@ def port_open(ip, port):
 
 def udp_scan(ip):
     open_ports = []
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
         futures = [executor.submit(port_open, ip, port) for port in range(1, 65001)]
         for future in tqdm.tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Scanning UDP "):
             port = 1 + futures.index(future)
@@ -64,7 +66,7 @@ def udp_scan(ip):
 
 def tcp_scan(ip):
     open_ports = []
-    with concurrent.futures.ThreadPoolExecutor() as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
         futures = [executor.submit(port_open, ip, port) for port in range(1, 65001)]
         for future in tqdm.tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Scanning TCP "):
             port = 1 + futures.index(future)
@@ -90,15 +92,15 @@ def main():
         "                                          \n"
         "         Created by Kurama250             \n"
         "   Github: https://github.com/Kurama250   \n"
-        "             Scan IP v1.0                 \n"
+        "             Scan IP v1.1                 \n"
     )
-    ip = input("Please enter the IP address to scan : ")
-    print("\n Starting the scan in progress ...")
+    ip = input("Please enter the IP address to scan: ")
+    print("\nStarting the scan in progress ...")
     try:
         scan_ip(ip)
         print("Scan completed successfully.")
     except Exception as e:
-        print(f"Scan error : {e}")
+        print(f"Scan error: {e}")
 
 if __name__ == "__main__":
     main()
