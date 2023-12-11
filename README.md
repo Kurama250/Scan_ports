@@ -1,6 +1,13 @@
 <h1 align="center">Tools for scan ip !</h1>
 <em><h5 align="center">(Programming Language - Python | Batch)</h5></em>
 
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Kurama250/Scan_ports">
+  <img src="https://img.shields.io/github/license/Kurama250/Scan_ports">
+  <img src="https://img.shields.io/github/repo-size/Kurama250/Scan_ports">
+  <img src="https://img.shields.io/badge/stability-stable-green">
+</p>
+
 # Tutorial to install scanner ! For Windows
 
 <h5>A) Auto installer</h5>
