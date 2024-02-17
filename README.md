@@ -8,6 +8,11 @@
   <img src="https://img.shields.io/badge/stability-stable-green">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/pypi/v/pip?label=pip">
+  <img src="https://img.shields.io/pypi/v/tqdm?label=tqdm">
+</p>
+
 # Tutorial to install scanner ! For Windows
 
 <h5>A) Auto installer</h5>
