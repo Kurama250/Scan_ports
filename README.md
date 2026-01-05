@@ -38,6 +38,7 @@ pip install tqdm
 
 ![alt text](https://github.com/Kurama250/Scan_ports/blob/main/scan.png)
 
-<h3 align="center"><strong>Support on Discord :</strong> <a href="https://discord.gg/6aebQGdDxB">Discord Link</a></3>
+<h3 align="center"><strong>Support on Discord :</strong> <a href="https://discord.gg/6aebQGdDxB">Discord Link</a> - Create a Ticket with bot for help</3>
+  
 <h3 align="center">If you like this repository don't hesitate to give it a star ⭐ !</h3>
 <h4 align="center">This code is for educational purposes, I decline all responsibility via your use !</h4>
